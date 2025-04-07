@@ -5,7 +5,7 @@ repository: https://github.com/jagadeesh8682/ringtone_set_plus
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
-  flutter: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
 
  
 dependencies:
