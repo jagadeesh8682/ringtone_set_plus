@@ -5,9 +5,7 @@ Flutter package for easily setting device's default ringtone, notification sound
 > [!IMPORTANT]
 > Works only on Android
 
-[![pub package](https://img.shields.io/pub/v/ringtone_set.svg)](
-https://pub.dartlang.org/packages/ringtone_set)
-</a>
+
 <img src="https://img.shields.io/badge/platform-android%20-%23989898" />
 
 ## Getting Started
