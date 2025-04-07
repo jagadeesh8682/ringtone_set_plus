@@ -38,7 +38,7 @@ dependencies:
 ```
 Import the package
 ```Dart
-import 'package:ringtone_set_plus/ringtone_set.dart';
+import 'package:ringtone_set_plus/ringtone_set_plus.dart';
 ```
 Call the function
 ```Dart
