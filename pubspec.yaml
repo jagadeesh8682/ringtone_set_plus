@@ -1,6 +1,6 @@
 name: ringtone_set_plus
 description: Flutter Plugin for setting devices default ringtone or notification sound.
-version: 0.0.1
+version: 0.0.2+2
 repository: https://github.com/jagadeesh8682/ringtone_set_plus
 
 environment:
@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.13.3
+  http: ">=0.13.3"
   path_provider: ^2.1.5
 dev_dependencies:
   flutter_test:

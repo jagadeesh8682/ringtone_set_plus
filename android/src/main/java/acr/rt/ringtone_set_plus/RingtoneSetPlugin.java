@@ -26,7 +26,6 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /**
  * RingtoneSetPlugin
@@ -36,15 +35,12 @@ public class RingtoneSetPlugin implements FlutterPlugin, MethodCallHandler {
     private MethodChannel channel;
     private Context mContext;
 
-    public static void registerWith(Registrar registrar) {
-        if (instance == null) {
-            instance = new RingtoneSetPlugin();
-        }
-        instance.onAttachedToEngine(registrar.context(), registrar.messenger());
+    // Default constructor required by Flutter
+    public RingtoneSetPlugin() {
     }
 
     @Override
-    public void onAttachedToEngine(FlutterPluginBinding binding) {
+    public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
         onAttachedToEngine(binding.getApplicationContext(), binding.getBinaryMessenger());
     }
 
@@ -54,10 +50,7 @@ public class RingtoneSetPlugin implements FlutterPlugin, MethodCallHandler {
         }
         this.mContext = applicationContext;
 
-        channel =
-                new MethodChannel(
-                        messenger, "ringtone_set");
-
+        channel = new MethodChannel(messenger, "ringtone_set");
         channel.setMethodCallHandler(this);
     }
 
